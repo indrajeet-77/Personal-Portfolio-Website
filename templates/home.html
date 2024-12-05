@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>My Portfolio</title> -->
+   <h1 class="mt-4">{{ message }}</h1> 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000000; /* Black background for the whole site */
+      color: #ffffff; /* White text color */
+      text-align: center; /* Center all the content */
+    }
+    #profpic {
+      width: 200px;
+      height: 200px;
+      background-image: url('https://0d0fc0c5-ca7a-4ebe-b430-cc4e3ee0b6eb-00-3so5euhebiuc0.picard.replit.dev/static/mypic.jpg'); /* Ensure your image path is correct */
+      background-size: cover; /* This ensures the image fills the circle without distortion */
+      background-position: center;
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin: 20px auto;
+    }
+
+    h1, h2, h3 {
+      color: #ffffff; /* White color for headings */
+    }
+
+    p {
+      color: #ffffff; /* White color for text */
+    }
+
+    .divider {
+      height: 2px;
+      background-color: #5f4b8b; /* Purple divider */
+      margin: 30px 0;
+    }
+
+    .btn-primary {
+      background-color: #5f4b8b; /* Purple button */
+      border-color: #5f4b8b;
+      text-align: center;
+    }
+    .btn-primary:hover {
+      background-color: #4a3b72; /* Darker purple on hover */
+      border-color: #4a3b72;
+    }
+
+    a {
+      color: #5f4b8b; /* Purple links */
+    }
+    a:hover {
+      color: #4a3b72; /* Darker purple on hover */
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* For the sections */
+    .section-title {
+      color: #ffffff; /* White title color */
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Typing animation styles */
+    .typing-effect {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(30) 1s infinite, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Experience Section background adjustment */
+    .experience-section {
+      background-color: #000000; /* Black background */
+      padding: 20px;
+      color: #ffffff; /* White text */
+    }
+
+    /* Certifications Section Centering and Padding Adjustments */
+    .certifications {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .certifications li {
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .certifications p {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    /* About me section text alignment */
+    .about-me p {
+      text-align: justify;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    /* Projects section styling */
+    .project-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      background-color: #1c1c1c; /* Darker background for project cards */
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      border: 2px solid #5f4b8b; /* Purple border on hover */
+    }
+
+    /* Project names styling */
+    .card-title {
+      color: #ffffff; /* White text for project names */
+    }
+
+    /* Contact Info on the same line */
+    .contact-info p {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="profpic"></div>
+    <h1 class="mt-4">My Portfolio</h1>
+    <h2 class="typing-effect">Indrajeet Pimpalgaonkar</h2>
+  </div>
+
+  <!-- Contact Info Section (aligned horizontally) -->
+  <div class="contact-info">
+    <p>Email: <a href="mailto:indrajeetpimpalgaonkar376@gmail.com">indrajeetpimpalgaonkar376@gmail.com</a></p>
+    <p>Phone: +91 7620711052</p>
+    <p><a href="https://www.linkedin.com/in/indrajeet-pimpalgaonkar-0794b8223/">LinkedIn</a></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- About Me Section -->
+  <div class="mb-5 about-me">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Hello! I'm Indrajeet, a dedicated Python developer and aspiring full stack developer with expertise in React.js, Node.js, Django, and a strong foundation in data structures and algorithms. My journey in tech is defined by consistent learning, problem-solving, and a passion for building scalable applications.
+      I am deeply interested in machine learning, data science, and exploring pentesting methodologies like OWASP and PTES. Alongside my technical skills, I have honed my communication skills and completed certifications in Python, DSA, and full stack development.
+      With a commitment to continuous growth and resilience in overcoming challenges, I strive to create meaningful contributions and innovative solutions in the tech world. Let’s connect and explore exciting possibilities together!
+    </p>
+    <p>
+      Connect with me on: 
+      <a href="https://leetcode.com/u/indrajeet_10/">LeetCode</a> | 
+      <a href="https://www.geeksforgeeks.org/user/indrajeet_10/">GeeksforGeeks</a> |  
+      <a href="https://github.com/indrajeet-77">GitHub</a>
+    </p>
+    <a href="https://drive.google.com/file/d/1Dkhisq5JAaLkxuT5rSxwdu9pYocuTdv8/view?usp=sharing" class="btn btn-primary">Download Resume</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Consistency Calendar Section -->
+  <div class="mb-5">
+    <h3 class="section-title">Consistency Calendar</h3>
+    <img src="https://0d0fc0c5-ca7a-4ebe-b430-cc4e3ee0b6eb-00-3so5euhebiuc0.picard.replit.dev/static/leet.jpg" alt="Consistency Calendar" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Experience Section -->
+  <div class="experience-section">
+    <h2 class="section-title">Experience</h2>
+    <ul class="list-group">
+      <li class="list-group-item" style="background-color: #000000; color: #ffffff;">
+        Infosys Intern - Worked on the HiFi Delivery Eats project, developing efficient solutions for delivery management and enhancing user experience.
+      </li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Projects Section -->
+  <div class="mb-5">
+    <h2 class="section-title">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Black Friday Analysis</h5>
+            <p class="card-text">Analyzed the sales data from Black Friday to provide insights into consumer buying behavior and trends.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Google Playstore Analysis</h5>
+            <p class="card-text">Performed data analysis on Google Playstore apps to understand trends in app ratings, categories, and installations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Finance Manager</h5>
+            <p class="card-text">Developed a finance manager application to track income and expenses, helping users manage their finances effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Certifications Section -->
+  <div class="mb-5">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="certifications">
+      <li>Python and Data Structures and Algorithms at Code and Debug</li>
+      <li>Full Stack Web Development using Python and Django Framework at MySirG</li>
+      <li>Communication Skills at TCS ION</li>
+      <li>Internship at Teachnook</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Footer Section -->
+  <footer class="mt-5">
+    <p>&copy; 2024 Indrajeet Pimpalgaonkar. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
